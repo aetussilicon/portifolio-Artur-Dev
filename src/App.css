@@ -6,27 +6,94 @@
   overflow: auto;
 }
 
-@media screen and (max-width: 480px){
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 
-  }
+}
+
+#apresentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.apresentationImage {
+  border-radius: 100%;
+}
+
+.apresentationDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apresentationTitle {
+  text-align: center;
+  color: var(--main-font-color);
+  font-weight: 700;
+}
+
+.apresentationParagraph {
+  color: var(--main-font-color);
+  font-weight: 400;
+}
+
+.apresentationButton {
+  height: 47px;
+  width: 208px;
+  border: none;
+  border-radius: 2px;
+  background-color: #FF6464;
+  font-size: 20px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 500;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.socialButtons {
+  margin: 0 10px 10px 0;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: #EDF7FA;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.projectsCards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+
+}  
+
+
+
+@media screen and (max-width: 480px){
 
   #apresentation {
     padding: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
   }
   
   .apresentationImage {
     height: 286px;
     width: 320px;
-    border-radius: 100%;
   }
 
   .apresentationDiv {
@@ -38,11 +105,37 @@
 
   .apresentationTitle {
     font-size: 40px;
-    text-align: center;
     width: 312px;
-    color: var(--main-font-color);
-    font-weight: 700;
     margin: 21px 31px;
+  }
+
+  .apresentationParagraph {
+    font-size: 20px;
+    text-align: center;
+    width: 328px;
+    margin: 0 23px 15px;
+
+  }
+
+  #projects {
+    padding: 3% 4%;
+    font-size: 25px;
+  }
+
+  .projectsCards {
+    padding: 5%;
+  }
+}
+
+@media screen and (min-width: 481px){
+
+  #apresentation {
+    padding: 10%;
+  }
+
+  .apresentationImage {
+    height: 386px;
+    width: 420px;
   }
 
   .apresentationParagraph {
@@ -50,68 +143,27 @@
     font-size: 20px;
     text-align: center;
     font-weight: 400;
-    width: 328px;
+    width: 550px;
     margin: 0 23px 15px;
 
   }
 
-  .apresentationButton {
-    height: 47px;
-    width: 208px;
-    border: none;
-    border-radius: 2px;
-    background-color: #FF6464;
-    font-size: 20px;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 500;
-    color: #FFFFFF;
-    cursor: pointer;
-  }
-
-  .socialButtons {
-    margin: 0 10px 10px 0;
-  }
-  
   #projects {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    background-color: #EDF7FA;
-    border-radius: 25px;
-    align-items: center;
-    height: 760px;
+    padding: 3% 10%;
     font-size: 25px;
   }
 
   .projectsCards {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    padding: 5%;
   }
-
-  #footer {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-  
-  }  
 
 }
 
 @media screen and ( min-width: 1024px) {
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
   
   #apresentation {
     padding: 5%;
-    display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     justify-content: space-between;
     margin-left: 200px;
   }
@@ -119,65 +171,31 @@
   .apresentationTitle {
     font-size: 44px;
     width: 508px;
-    font-weight: 700;
-    color: var(--main-font-color);
   }
   
   .apresentationParagraph {
-    color: var(--main-font-color);
     font-size: 16px;
+    text-align: start;
     width: 497px;
-    font-weight: 400;
   }
   
   .apresentationImage {
     height: 386px;
     width: 420px;
-    border-radius: 100%;
     margin-right: 200px;
   }
   
-  .apresentationButton {
-    margin-top: 10px;
-    height: 47px;
-    width: 208px;
-    border: none;
-    border-radius: 2px;
-    background-color: #FF6464;
-    font-size: 20px;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 500;
-    color: #FFFFFF;
-    cursor: pointer;
-  }
-  
   #projects {
-    margin: 80px 20px 0;
-    background-color: #EDF7FA;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 500px;
+    padding: 1% 3%;
+    font-size: 28px;
+
   }
-  
-  .projectsTitle {
-    font-size: 35px;
-  }
+
   
   .projectsCards {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 100px;
+    gap: 80px;
+    padding: 2%;
   }
-  
-  #footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 25px 0;
-  
-  }  
 }
 

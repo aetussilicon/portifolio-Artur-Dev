@@ -18,6 +18,25 @@
 
 }
 
+@media screen and (min-width: 481px){
+  .card {
+    width: 550px;
+  }
+
+  .cardTitle {
+    font-size: 25px;
+  }
+
+  .cardDescription {
+    margin: 27px 0 27px;
+    font-size: 20px;
+  }
+
+  .cardButton {
+    padding: 15px;
+  }
+}
+
 @media screen and (min-width: 80em) {
   .card {
     width: 450px;
