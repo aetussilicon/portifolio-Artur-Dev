@@ -4,9 +4,9 @@ import { cardComponent } from './components/cardComponent';
 function App() {
 
   //cards img
-  const ivImg = './src/assets/IV.png';
-  const fbImg = './src/assets/Updateincomes.png';
-  const dpImg = './src/assets/Dp.png';
+  const ivImg = "assets/IV.png";
+  const fbImg = 'assets/Updateincomes.png';
+  const dpImg = 'assets/Dp.png';
 
   //cards title
   const ivTitle = "Infinity Vault";
@@ -27,7 +27,7 @@ function App() {
     <>
       <body>
         <section id="apresentation">
-          <img className="apresentationImage" src='./src/assets/me.jpg' alt='Foto de Artur' />
+          <img className="apresentationImage" src='assets/me.jpg' alt='Foto de Artur' />
           <div className='apresentationDiv'>
             <h1 className='apresentationTitle'>Olá, me chamo Artur, Desenvolvedor Fullstack</h1>
             <p className='apresentationParagraph'>Sou desenvolvedor fullstack com vasto conhecimentos em
@@ -35,10 +35,10 @@ function App() {
               Framework, Python, JavaScript, HTML, CSS, ReactJS, MySQL.
             </p>
             <div className='socialButtons'>
-              <a href='https://github.com/aetussilicon' target='_blank' rel="noopener noreferrer"><img src='./src/assets/SocialMedia/Github.png' alt='Github'/></a>
-              <a href='https://www.linkedin.com/in/artur-olivr/' target='_blank' rel="noopener noreferrer"><img src='./src/assets/SocialMedia/Linkedin.png' alt='Linkedin'/></a>
-              <a href='https://www.instagram.com/aetusartur/' target='_blank' rel="noopener noreferrer"><img src='./src/assets/SocialMedia/Instagram.png' alt='Instagram'/></a>            </div>
-            <a href='./src/files/Currículo.pdf' download><button className='apresentationButton'>Baixar Currículo</button></a>
+              <a href='https://github.com/aetussilicon' target='_blank' rel="noopener noreferrer"><img src='assets/SocialMedia/Github.png' alt='Github'/></a>
+              <a href='https://www.linkedin.com/in/artur-olivr/' target='_blank' rel="noopener noreferrer"><img src='assets/SocialMedia/Linkedin.png' alt='Linkedin'/></a>
+              <a href='https://www.instagram.com/aetusartur/' target='_blank' rel="noopener noreferrer"><img src='assets/SocialMedia/Instagram.png' alt='Instagram'/></a>            </div>
+            <a href='files/Currículo.pdf' download><button className='apresentationButton'>Baixar Currículo</button></a>
           </div>
           
         </section>

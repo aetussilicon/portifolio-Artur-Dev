@@ -1,4 +1,4 @@
-import '/src/styles/cardComponent.css'
+import '/public/styles/cardComponent.css'
 
 export function cardComponent({ img, title, text, link }) {
     return (
