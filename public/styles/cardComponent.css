@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .card {
     width: 330px;
   }
@@ -18,7 +18,7 @@
 
 }
 
-@media screen and (min-width: 481px){
+@media screen and (min-width: 481px) and (max-width: 768px){
   .card {
     width: 550px;
   }
@@ -37,13 +37,42 @@
   }
 }
 
-@media screen and (min-width: 80em) {
+@media screen and (min-width: 769px) and ( max-width: 1024px) {
+  .card {
+    width: 380px;
+  }
+
+  .cardTitle {
+    font-size: 17px;
+  }
+
+  .cardDescription {
+    margin: 20px 0 20px;
+    font-size: 14px;
+  }
+
+  .cardButton {
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
   .card {
     width: 450px;
   }
 
+  .cardDescription {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .card {
+    width: 450px;
+  }
+  
   .cardTitle {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .cardDescription {
@@ -52,10 +81,10 @@
   }
 
   .cardButton {
-    padding: 15px;
+    padding: 18px;
   }
-}
 
+}
 .card {
     position: relative;
     aspect-ratio: 16/9;
