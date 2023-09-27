@@ -24,7 +24,7 @@ function App() {
   const fbLink = 'https://github.com/aetussilicon/FamiliarBudget'
   const dpLink = 'https://github.com/aetussilicon/GlaucoDP'
 
-  return (
+  return (  
     <>
       <body>
         <section id="apresentation">
@@ -35,6 +35,13 @@ function App() {
               tecnologias back e front-end, sendo elas: Java, Spring
               Framework, Python, JavaScript, HTML, CSS, ReactJS, MySQL.
             </p>
+            <div className='apresentationContact'>
+              <h2 className='apresentationContactTItle'>Contatos</h2>
+              <ul className='aprensetationConctactList'>
+                <li><strong>Email:</strong> arturgaollidev@outlook.com</li>
+                <li><strong>Celular:</strong> (11) 97393-5374</li>
+              </ul>
+            </div>
             <div className='socialButtons'>
               <a href='https://github.com/aetussilicon' target='_blank' rel="noopener noreferrer"><img src='assets/SocialMedia/Github.png' alt='Github'/></a>
               <a href='https://www.linkedin.com/in/artur-olivr/' target='_blank' rel="noopener noreferrer"><img src='assets/SocialMedia/Linkedin.png' alt='Linkedin'/></a>
